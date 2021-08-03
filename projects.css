@@ -1,0 +1,180 @@
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/* nav bar takes up whole width and elements are on different corners */
+nav {
+    display:flex;
+    position: relative;
+    min-height: 10vh;
+    max-width:100vw;
+    padding: 0rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+nav a img{
+    height:7rem;
+    width:7rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style:none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.nav-links a{
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.2rem;
+    color:white;
+    text-transform: uppercase;
+    background-color: black;
+    transition: opacity 100ms ease-in;
+}
+
+.nav-links a:hover {
+    opacity:0.8;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a::after {
+    content:'';
+    display: block;
+    height:4px;
+    width:0%;
+    background-color: currentColor;
+    position: absolute;
+    bottom: 0;
+    transition: width 100ms ease-in;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem;
+}
+
+.img-row{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 25%;
+    justify-content: space-around;
+    
+}
+.biking{
+    position: relative;
+}
+.biking::after {
+    content: "Biking";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size:20px;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    height: 99%;
+    width: 100%;
+    top:0;
+    left:0;
+    transition: opacity 250ms ease;
+}
+
+.biking:hover::after {
+    opacity:0.8;
+}
+
+.coding{
+    position: relative;
+}
+.coding::after {
+    content: "Coding";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size:20px;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    height: 99%;
+    width: 100%;
+    top:0;
+    left:0;
+    transition: opacity 250ms ease;
+}
+
+.coding:hover::after {
+    opacity:0.8;
+}
+
+.photo{
+    position: relative;
+}
+.photo::after {
+    content: "Photography";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size:20px;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    height: 99%;
+    width: 100%;
+    top:0;
+    left:0;
+    transition: opacity 250ms ease;
+}
+
+.photo:hover::after {
+    opacity:0.8;
+}
+
+
+.music{
+    position: relative;
+}
+.music::after {
+    content: "Music";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size:20px;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    height: 99%;
+    width: 100%;
+    top:0;
+    left:0;
+    transition: opacity 250ms ease;
+}
+
+.music:hover::after {
+    opacity:0.5;
+}

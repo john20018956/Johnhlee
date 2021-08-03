@@ -1,0 +1,81 @@
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/* nav bar takes up whole width and elements are on different corners */
+nav {
+    display:flex;
+    position: relative;
+    min-height: 10vh;
+    max-width:100vw;
+    padding: 0rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+nav a img{
+    height:7rem;
+    width:7rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style:none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.nav-links a{
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.2rem;
+    color:white;
+    text-transform: uppercase;
+    background-color: black;
+    transition: opacity 100ms ease-in;
+}
+
+.nav-links a:hover {
+    opacity:0.8;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a::after {
+    content:'';
+    display: block;
+    height:4px;
+    width:0%;
+    background-color: currentColor;
+    position: absolute;
+    bottom: 0;
+    transition: width 100ms ease-in;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0rem;
+}
+
+.vids{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
