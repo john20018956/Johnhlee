@@ -7,7 +7,7 @@
 
 body {
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
 }
 
 /* nav bar takes up whole width and elements are on different corners */
@@ -67,16 +67,17 @@ nav a img{
     width: 100%;
 }
 
-.title {
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 2.5rem 0rem;
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-.vids{
+.links{
     display: flex;
     justify-content: space-evenly;
+}
+
+.linkedin a{
+    height: 5px;
+    width: 5rem;
+}
+
+.github a{
+    height: 5rem;
+    width: 5rem;
 }

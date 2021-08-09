@@ -1,0 +1,209 @@
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/* nav bar takes up whole width and elements are on different corners */
+nav {
+    display:flex;
+    position: relative;
+    min-height: 10vh;
+    max-width:100vw;
+    padding: 0rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+nav a img{
+    height:7rem;
+    width:7rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style:none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.nav-links a{
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.2rem;
+    color:white;
+    text-transform: uppercase;
+    background-color: black;
+    transition: opacity 100ms ease-in;
+}
+
+.nav-links a:hover {
+    opacity:0.8;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a::after {
+    content:'';
+    display: block;
+    height:4px;
+    width:0%;
+    background-color: currentColor;
+    position: absolute;
+    bottom: 0;
+    transition: width 100ms ease-in;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.intro {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.intro h1 {
+    color:white;
+    font-size: 6rem;
+}
+
+.intro img{
+    transition: 200ms ease-in;
+    opacity:1;
+    height: 35rem;
+    width: 37rem;
+}
+
+.intro img:hover {
+    opacity:0.8;
+}
+
+.biking{
+    text-decoration: none;
+    color: white;
+    position:relative;
+}
+
+.biking::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5.2rem;
+    width: 100%;
+    height: 5px;
+    background: currentColor;
+
+    transition: transform 250ms ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.biking:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.coding {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.coding::after {
+    content:"";
+    position:absolute;
+    
+    width: 1px;
+    height: 100%;
+    border-right: 10px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.photo {
+    text-decoration: none;
+    border-radius: 1rem;
+    color: white;
+}
+
+@keyframes flash {
+    0%{
+        background-color: black;
+    }
+
+    50% {
+        background-color: gray;
+        color: black;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+.photo:hover{
+    animation: flash 800ms infinite ease-out;
+}
+
+.music {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.music::after {
+    content:'';
+    position: absolute;
+    background-image: url(/img/music.png);
+    top: 4.5rem;
+    left: 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transform-origin: bottom;
+    opacity:0;
+    height: 7rem;
+    width: 25rem;
+    transform:scaleY(0);
+    transition: transform 250ms ease-out;
+}
+
+.music:hover::after {
+    opacity:1;
+    transform-origin: top;
+    transform: scaleY(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

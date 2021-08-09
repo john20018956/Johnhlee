@@ -7,7 +7,7 @@
 
 body {
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',sans-serif;
 }
 
 /* nav bar takes up whole width and elements are on different corners */
@@ -67,16 +67,35 @@ nav a img{
     width: 100%;
 }
 
-.title {
-    color: white;
+.biking-title{ 
     display: flex;
+    color: white;
     justify-content: center;
-    padding: 2.5rem 0rem;
+    padding: 1rem 0rem;
     font-size: 4rem;
-    font-weight: bold;
 }
 
-.vids{
+.trip-start{
+    color: white;
+    position: absolute;
+    top:10%;
+    right: 27%;
+}
+
+.trip-1 {
     display: flex;
+    position:relative;
+    align-items:center;
     justify-content: space-evenly;
 }
+
+.trip-2 {
+    display: flex;
+    position:relative;
+    align-items:center;
+    justify-content: space-evenly;
+    padding-top: 5rem; 
+}
+
+
+

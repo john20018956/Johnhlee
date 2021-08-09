@@ -1,0 +1,241 @@
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* nav bar takes up whole width and elements are on different corners */
+nav {
+    display:flex;
+    position: relative;
+    min-height: 10vh;
+    max-width:100vw;
+    padding: 0rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+nav a img{
+    height:7rem;
+    width:7rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style:none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.nav-links a{
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.2rem;
+    color:white;
+    text-transform: uppercase;
+    background-color: black;
+    transition: opacity 100ms ease-in;
+}
+
+.nav-links a:hover {
+    opacity:0.8;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a::after {
+    content:'';
+    display: block;
+    height:4px;
+    width:0%;
+    background-color: currentColor;
+    position: absolute;
+    bottom: 0;
+    transition: width 100ms ease-in;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.coding-title{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.lang-list {
+    color: white;
+    position: relative;
+    display: block;
+    padding-left: 15rem;
+    font-size: 3rem;
+}
+
+.lang-list li {
+    padding: 1rem 0rem;
+    position: relative;
+    list-style: none;
+}
+
+.clang{
+    position: relative;
+}
+
+.clang::after{
+    content:"Main CS Language";
+    background: white;
+    display: flex;
+    justify-content: center;
+    color: black;
+    width: 50rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 5px;
+    left:  13rem;
+    top: 1rem;
+    transform-origin: left;
+    animation: slide 1s ease-out;
+}
+
+@keyframes slide {
+    0%{
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    100% {
+        transform: scaleX(1);
+    
+    }
+}
+
+.CSS{
+    position: relative;
+}
+
+.CSS::after{
+    content:"Website Styling";
+    background: white;
+    display: flex;
+    justify-content: center;
+    color: black;
+    width: 45rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 5px;
+    left: 13rem;
+    top: 1rem;
+    transform-origin: left;
+    
+    animation: slide 1s ease-out;
+    
+}
+
+.HTML{
+    position: relative;
+}
+
+.HTML::after{
+    content:"Website Layout";
+    display:flex;
+    justify-content: center;
+    background: white;
+    color: black;
+    width: 30rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 5px;
+    left: 13rem;
+    top: 1rem;
+    transform-origin: left;
+    animation: slide 1s ease-out;
+}
+
+.MATLAB{
+    position: relative;
+}
+
+.MATLAB::after{
+    content:"Research";
+    display:flex;
+    justify-content: center;
+    background: white;
+    color: black;
+    width: 20rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 5px;
+    left: 13rem;
+    top: 1rem;
+    transform-origin: left;
+    animation: slide 1s ease-out;
+}
+.Java{
+    position: relative;
+}
+
+.Java::after{
+    content:"PA";
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 5px;
+    left: 13rem;
+    top: 1rem;
+    transform-origin: left;
+    animation: slide 1s ease-out;
+}
+
+.Python {
+    position: relative;
+}
+
+.Python::before{
+    content:"";
+    background: white;
+    color: black;
+    
+    width: 15rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 5px;
+    left: 0rem;
+    top: 1rem;
+    transform-origin: left;
+    opacity: 0;
+    animation: slidePython 2s ease-out;
+    
+}
+
+@keyframes slidePython {
+    0% {
+        transform:scaleX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scaleX(-50%);
+        opacity: 1;
+        
+    }
+
+    100%{
+        transform: scaleX(0);
+    }
+
+}

@@ -7,7 +7,7 @@
 
 body {
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto', sans-serif;
 }
 
 /* nav bar takes up whole width and elements are on different corners */
@@ -67,16 +67,28 @@ nav a img{
     width: 100%;
 }
 
-.title {
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 2.5rem 0rem;
-    font-size: 4rem;
-    font-weight: bold;
+.about{
+    display: block;
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(to left, rgba(245, 246, 252, 0.2), rgba(230, 63, 22, 0.5)),
+    url('/img/about_headshot1.png');
+    background-size: cover;
+    border-radius: 10px;
 }
 
-.vids{
-    display: flex;
-    justify-content: space-evenly;
+
+
+p{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 40rem;
+    top:7.5rem;
+    left:5rem;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
 }
