@@ -73,7 +73,7 @@ nav a img{
     height: 90vh;
     width: 100vw;
     background-image: linear-gradient(to left, rgba(245, 246, 252, 0.2), rgba(230, 63, 22, 0.5)),
-    url('/img/about_headshot1.png');
+    url('img/about_headshot1.png');
     background-size: cover;
     border-radius: 10px;
 }
